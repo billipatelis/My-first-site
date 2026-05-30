@@ -4,21 +4,30 @@
     <meta charset="UTF-8">
     <title>Quacky's Site</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Racing/Gaming γραμματοσειρές -->
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
+        <!-- Αριστερό Λογότυπο -->
         <div class="logo">QUACKY'S SITE</div>
         
+        <!-- Μενού Πλοήγησης -->
         <nav>
             <a href="#" class="active">Home</a>
             <a href="#">Games</a>
             <a href="#">About</a>
         </nav>
         
+        <!-- Δεξί Κοντέρ σε μορφή SVG (κώδικας) για να μη σπάει ποτέ -->
         <div class="speedometer">
-            <img src="https://i.imgur.com/8QWvX9G.png" alt="Speedometer">
+            <svg width="60" height="45" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 80 C 10 50, 30 20, 50 20 C 70 20, 90 50, 80 80" stroke="#ff5500" stroke-width="6" stroke-linecap="round" stroke-dasharray="2 3"/>
+                <path d="M25 75 C 17 52, 33 27, 50 27 C 67 27, 83 52, 75 75" stroke="#ffaa00" stroke-width="2"/>
+                <circle cx="50" cy="75" r="6" fill="#ffffff"/>
+                <line x1="50" y1="75" x2="75" y2="35" stroke="#ff0000" stroke-width="4" stroke-linecap="round"/>
+            </svg>
         </div>
     </header>
 
@@ -26,6 +35,7 @@
 
         <h1 class="welcome-text">WELCOME</h1>
 
+        <!-- Οι δύο πάνω κάρτες δίπλα-δίπλα -->
         <div class="cards-container">
             <div class="card orange-glow">
                 <img src="download.jpg" alt="Image 1">
@@ -36,12 +46,15 @@
             </a>
         </div>
 
+        <!-- Το μεγάλο banner του YouTube -->
         <div class="youtube-container orange-glow">
             <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/YT_logo.2e16d0ba.fill-1440x810.jpg" alt="YouTube">
         </div>
 
+        <!-- Τίτλος Βίντεο -->
         <h2 class="video-title">🏁 SUPERCARS VIDEO 🏁</h2>
 
+        <!-- Το βίντεο με το αυτοκίνητο -->
         <div class="iframe-container orange-glow">
             <iframe
                 src="https://www.youtube.com/embed/ooZfEQgLh3U"
