@@ -1,4 +1,4 @@
-/* --- Γενικά Στυλ & Reset --- */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background: #000000; /* Καθαρό μαύρο φόντο όπως η εικόνα bfcdd16c-5a27-4054-8309-6bca3df3b804.png */
+    background: #000000; /* Καθαρό μαύρο φόντο όπως η εικόνα */
     color: white;
     min-height: 100vh;
     display: flex;
@@ -98,11 +98,10 @@ main {
     text-shadow: 0 0 20px rgba(255, 85, 0, 0.6);
 }
 
-/* Διάταξη για τις 2 πάνω κάρτες (Παπί & Roblox) */
+/* Διάταξη για την κάρτα στην κορυφή */
 .cards-container {
     display: flex;
     justify-content: center;
-    gap: 30px;
     width: 100%;
     margin-bottom: 25px;
 }
@@ -119,11 +118,11 @@ main {
     object-fit: cover;
 }
 
-/* YouTube Banner */
+/* Το μεσαίο Banner με το Supercar */
 .youtube-container {
     width: 100%;
     max-width: 710px;
-    height: 120px;
+    height: 250px; /* Αυξήθηκε ελαφρώς το ύψος για να φαίνεται καλύτερα το αμάξι */
     margin-bottom: 30px;
 }
 
