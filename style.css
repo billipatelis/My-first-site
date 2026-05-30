@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background: #000000; /* Καθαρό μαύρο όπως η εικόνα */
+    background: #000000; /* Καθαρό μαύρο φόντο όπως η εικόνα bfcdd16c-5a27-4054-8309-6bca3df3b804.png */
     color: white;
     min-height: 100vh;
     display: flex;
@@ -15,7 +15,7 @@ body {
     align-items: center;
 }
 
-/* --- Κοινό Πορτοκαλί Neon Περίγραμμα για τις Κάρτες --- */
+/* --- Κοινό Πορτοκαλί Neon Περίγραμμα --- */
 .orange-glow {
     border: 2px solid #ff5500;
     border-radius: 18px;
@@ -65,10 +65,15 @@ nav a:hover, nav a.active {
     color: #ff5500;
 }
 
-/* Το κοντέρ πάνω δεξιά */
-.speedometer img {
-    height: 45px;
-    object-fit: contain;
+/* Το SVG κοντέρ πάνω δεξιά με εφέ κίνησης */
+.speedometer svg {
+    filter: drop-shadow(0 0 8px rgba(255, 85, 0, 0.7));
+    animation: revs 2s ease-in-out infinite alternate;
+}
+
+@keyframes revs {
+    0% { transform: rotate(-5deg); }
+    100% { transform: rotate(10deg); }
 }
 
 /* --- Main Layout --- */
@@ -93,7 +98,7 @@ main {
     text-shadow: 0 0 20px rgba(255, 85, 0, 0.6);
 }
 
-/* Flexbox για τις 2 πάνω κάρτες */
+/* Διάταξη για τις 2 πάνω κάρτες (Παπί & Roblox) */
 .cards-container {
     display: flex;
     justify-content: center;
@@ -111,7 +116,7 @@ main {
 .card img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Γεμίζει την κάρτα σωστά χωρίς να παραμορφώνει */
+    object-fit: cover;
 }
 
 /* YouTube Banner */
@@ -168,7 +173,7 @@ footer p {
     margin-bottom: 10px;
 }
 
-/* Η φωτεινή γραμμή στο κάτω μέρος της εικόνας */
+/* Η πορτοκαλί φωτεινή γραμμή στο τέλος */
 .footer-glow-line {
     width: 100%;
     height: 4px;
@@ -176,7 +181,7 @@ footer p {
     box-shadow: 0 0 15px #ff5500;
 }
 
-/* --- Scrollbar --- */
+/* --- Custom Scrollbar --- */
 ::-webkit-scrollbar {
     width: 10px;
 }
