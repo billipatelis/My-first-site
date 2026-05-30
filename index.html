@@ -1,51 +1,61 @@
 <!DOCTYPE html>
-<html>
+<html lang="el">
 <head>
+    <meta charset="UTF-8">
     <title>Quacky's Site</title>
-
     <link rel="stylesheet" href="style.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double+Ink:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
     <header>
+        <div class="logo">QUACKY'S SITE</div>
+        
         <nav>
-            <a href="#">Home</a>
+            <a href="#" class="active">Home</a>
             <a href="#">Games</a>
             <a href="#">About</a>
         </nav>
+        
+        <div class="speedometer">
+            <img src="https://i.imgur.com/8QWvX9G.png" alt="Speedometer">
+        </div>
     </header>
 
     <main>
 
-        <h1>Welcome</h1>
+        <h1 class="welcome-text">WELCOME</h1>
 
-        <img src="download.jpg" alt="Image 1">
+        <div class="cards-container">
+            <div class="card orange-glow">
+                <img src="download.jpg" alt="Image 1">
+            </div>
 
-        <a href="https://www.roblox.com">
-            <img src="images.jpg" alt="Roblox">
-        </a>
+            <a href="https://www.roblox.com" class="card orange-glow">
+                <img src="images.jpg" alt="Roblox">
+            </a>
+        </div>
 
-        <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/YT_logo.2e16d0ba.fill-1440x810.jpg" width="600" alt="YouTube">
+        <div class="youtube-container orange-glow">
+            <img src="https://storage.googleapis.com/gweb-uniblog-publish-prod/images/YT_logo.2e16d0ba.fill-1440x810.jpg" alt="YouTube">
+        </div>
 
-        <h2>Supercars Video</h2>
+        <h2 class="video-title">🏁 SUPERCARS VIDEO 🏁</h2>
 
-        <iframe
-            width="800"
-            height="450"
-            src="https://www.youtube.com/embed/ooZfEQgLh3U"
-            title="Supercars Video"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-        </iframe>
+        <div class="iframe-container orange-glow">
+            <iframe
+                src="https://www.youtube.com/embed/ooZfEQgLh3U"
+                title="Supercars Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
 
     </main>
 
     <footer>
-       
+        <p>This is the footer</p>
+        <div class="footer-glow-line"></div>
     </footer>
 
 </body>
